@@ -1,0 +1,33 @@
+<div class="container">
+    <table class="table table-stripped">
+
+        <thead class="bg-info">
+
+            <tr>
+                <th>id</th>
+            <th>first name</th>
+            <th>last name</th>
+            <th>email id</th>
+            <th>mobile no</th>
+            <th><a href="" routerLink="add">Add User</a></th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let s of u">
+
+                <td>{{s.id}}</td>
+                <td>{{s.fName}}</td>
+                <td>{{s.lName}}</td>
+                <td>{{s.emialId}}</td>
+                <td>{{s.mobileNo}}</td>
+                
+              
+            </tr>
+        </tbody>
+
+    </table>
+
+   
+</div>
